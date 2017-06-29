@@ -6,10 +6,10 @@ import { UserChannelsComponent } from "app/user-channels/user-channels.component
 import { AllChannelsComponent } from "app/all-channels/all-channels.component";
 
 const appRoutes: Routes =[
-    { path: '', redirectTo: '/getAllUsers', pathMatch:'full'},
-    { path: 'getAllUsers', component: HomeComponent, pathMatch:'full'},
+    { path: 'getAllUsers', component: HomeComponent},
     { path: 'getUserChannels', component: UserChannelsComponent},
-    { path: 'getAllChannels', component: AllChannelsComponent}
+    { path: 'getAllChannels', component: AllChannelsComponent},
+    { path:'**', redirectTo: 'getAllUsers'}
 ];
 
 @NgModule({
