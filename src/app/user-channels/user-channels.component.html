@@ -1,0 +1,33 @@
+<form (ngSubmit)="submit(f)" #f="ngForm">
+  <div class="row">
+    <div class="col-md-5 form-group">
+      <label for="ID">User ID</label>
+      <input type="text" id="id" 
+      class=""
+      name="id"
+      ngModel>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-success" >Submit</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" *ngFor="let r of rows; let i=index">
+      <div class="col-md-4" *ngFor="let ch of r" >
+        <div id="user_channels">
+          <h3>Name</h3>
+          <h4>{{ch.name}}</h4>
+
+          <h3>Price</h3> 
+          <h4>{{ch.price}}</h4>
+
+          <h3>Channel Number</h3> 
+          <h4>{{ch.channelNumber}}</h4>
+
+          <h3>ID</h3> 
+          <h4>{{ch._id}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

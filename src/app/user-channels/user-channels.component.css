@@ -1,0 +1,37 @@
+.container {
+    padding: 20px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #333333;
+    margin: auto;
+}
+#user_channels {
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    min-height: 300px;
+    max-height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: scroll;
+}
+#user_channels:last-child {
+    margin-bottom: 0px;
+}
+#user_channels h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #a1b2c6;
+    font-weight: bold;
+}
+#user_channels h4 {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a1b2c6;
+}
+#user_channels h4:last-child {
+    border-bottom: none;
+}

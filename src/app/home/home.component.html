@@ -1,0 +1,36 @@
+<div class="container"> 
+  <div class="row" *ngFor="let r of rows; let i=index">
+    <div class="col-md-4" *ngFor="let u of r" >
+      <div id="all_users">
+        <h3>ID</h3>
+        <h4>{{u._id}}</h4>
+
+        <h3>First Name</h3> 
+        <h4>{{u.firstName}}</h4>
+
+        <h3>Last Name</h3>
+        <h4>{{u.lastName}}</h4>
+ 
+        <h3>Address</h3>
+        <h4>{{u.address}}</h4>
+ 
+        <h3>Creation Date</h3>
+        <h4>{{u.cDate}}</h4>
+ 
+        <h3>Price Per Month</h3>
+        <h4>{{u.totalMonthlyPrice}}</h4>
+ 
+        <h3>__V</h3>
+        <h4>{{u.__v}}</h4>
+ 
+        <h3>channels</h3>
+        <div id="user_channels" *ngFor="let c of u.channels">
+          <h5><span class="red">Name: </span>{{c.name}}</h5>
+          <h5><span class="red">Price: </span>{{c.price}}</h5>
+          <h5><span class="red">Channel Number: </span>{{c.channelNumber}}</h5>
+          <h5><span class="red">ID: </span>{{c._id}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

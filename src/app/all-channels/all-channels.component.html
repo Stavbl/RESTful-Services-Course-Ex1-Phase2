@@ -1,0 +1,42 @@
+<div class="container"> 
+  <div class="row" *ngFor="let r of rows; let i=index">
+    <div class="col-md-4" *ngFor="let c of r" >
+      <div id="all_channels">
+        <h3>ID</h3>
+        <h4>{{c._id}}</h4>
+
+        <h3>Name</h3> 
+        <h4>{{c.name}}</h4>
+        
+        <h3>Channel Number</h3>
+        <h4>{{c.channelNumber}}</h4>
+
+        <h3>Description</h3>
+        <h4>{{c.description}}</h4>
+
+        <h3>Price Per Month</h3>
+        <h4>{{c.pricePerMonth}}</h4>
+
+        <h3>Office Address</h3>
+        <h4>{{c.officeAddress}}</h4>
+
+        <h3>Activity Hours</h3>
+        <h4>{{c.activityHours}}</h4>
+
+        <h3>Package Number</h3>
+        <h4>{{c.packageNum}}</h4>
+
+        <h3>Creation Date</h3>
+        <h4>{{c.cDate}}</h4>
+
+        <h3>__V</h3>
+        <h4>{{c.__v}}</h4>
+
+        <h3>Top Shows</h3>
+        <div id="top_shows" *ngFor="let s of c.topShows">
+          <h5>{{s}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
