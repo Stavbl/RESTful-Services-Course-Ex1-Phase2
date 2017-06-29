@@ -6,7 +6,8 @@ import { UserChannelsComponent } from "app/user-channels/user-channels.component
 import { AllChannelsComponent } from "app/all-channels/all-channels.component";
 
 const appRoutes: Routes =[
-    { path: '', component: HomeComponent, pathMatch:'full'},
+    { path: '', redirectTo: '/getAllUsers', pathMatch:'full'},
+    { path: 'getAllUsers', component: HomeComponent, pathMatch:'full'},
     { path: 'getUserChannels', component: UserChannelsComponent},
     { path: 'getAllChannels', component: AllChannelsComponent}
 ];
